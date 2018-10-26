@@ -40,7 +40,7 @@ To add the Episerver NuGet feed to Visual Studio:
 
 Clone the repository to an empty folder on your system if you have not already done so, and open the solution (.sln) file in Visual Studio.
 
-To create the database, copy the *EPiServer.Cms.mdf* file from *packages/EPiServer.CMS.x.x.x/tools* to the *EpiserverBase/App_Data* folder. Then, open the package manager console in Visual Studio (Tools > NuGet Package Manager > Package Manager Console) and run the following command: `Initialize-EPiDatabase` or add `createDatabaseSchema="true" updateDatabaseSchema="true"` attributes to <episerver.framework> node in web.config.
+To create the database, copy the *EPiServer.Cms.mdf* file from *packages/EPiServer.CMS.x.x.x/tools* to the *EpiserverBase/App_Data* folder. Then, open the package manager console in Visual Studio (Tools > NuGet Package Manager > Package Manager Console) and run the following command: `Initialize-EPiDatabase` or add `createDatabaseSchema="true" updateDatabaseSchema="true"` attributes to `<episerver.framework>` node in **Web.config**.
 
 Alternatively, you can create your own database and run the SQL scripts found at *packages/EPiServer.CMS.Core.x.x.x/tools/EPiServer.Cms.Core.sql*. You will need to update the *EpiserverBase/connections.config* file afterward if you choose this method.
 
